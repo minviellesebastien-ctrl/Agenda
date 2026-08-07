@@ -94,17 +94,14 @@ body{
 }
 
 .event-place{
-
     position:absolute;
 
     left:20px;
-    bottom:32px;
+    bottom:74px;
 
-    color:#fff;
+    color:white;
 
     font-size:16px;
-
-    line-height:1.35;
 }
 
 /* ===== COMPTEUR ===== */
@@ -187,7 +184,7 @@ body{
     position:absolute;
 
     left:20px;
-    bottom:62px;
+    bottom:54px;
 
     width:140px;
     height:1px;
@@ -199,7 +196,7 @@ body{
     position:absolute;
 
     left:20px;
-    bottom:34px;
+    bottom:28px;
 
     color:white;
 
