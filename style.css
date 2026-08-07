@@ -72,6 +72,7 @@ body{
     color:#fff;
     font-size:28px;
     font-weight:bold;
+    padding-bottom:16px;
 }
 
 .event-date{
@@ -177,4 +178,9 @@ body{
     left:20px;
     top:70px;
     width:180px;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:16px;
 }
