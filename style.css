@@ -44,7 +44,7 @@ body{
 
     top:10px;
     right:10px;
-    width:105px;
+    width:120px;
     height:33px;
     padding:0 10px;
 
@@ -52,7 +52,7 @@ body{
     align-items:center;
     justify-content:center;
 
-    border-radius:14px;
+    border-radius:20px;
 
     background:rgba(45,22,0,.82);
 
