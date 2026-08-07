@@ -23,6 +23,12 @@ document.getElementById("app").innerHTML = `
     20:00
 </div>
 
+<div class="separator"></div>
+
+<div class="event-time">
+    20:00
+</div>
+
 </div>
 
 <div class="event-counter">
