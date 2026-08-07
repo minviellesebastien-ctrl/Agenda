@@ -86,7 +86,7 @@ body{
     position:absolute;
 
     left:20px;
-    bottom:92px;
+    top:160px;
 
     color:#fff;
 
@@ -97,7 +97,7 @@ body{
     position:absolute;
 
     left:20px;
-    bottom:74px;
+    top:198px;
 
     color:white;
 
@@ -184,7 +184,7 @@ body{
     position:absolute;
 
     left:20px;
-    bottom:54px;
+    top:235px;
 
     width:140px;
     height:1px;
@@ -196,7 +196,7 @@ body{
     position:absolute;
 
     left:20px;
-    bottom:28px;
+    top:248px;
 
     color:white;
 
