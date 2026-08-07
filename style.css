@@ -69,38 +69,18 @@ body{
 /* ===== TEXTES ===== */
 
 .event-title{
-
-    position:absolute;
-
-    left:20px;
-    top:70px;
-
     color:#fff;
-
     font-size:28px;
     font-weight:bold;
 }
 
 .event-date{
-
-    position:absolute;
-
-    left:20px;
-    top:175px;
-
     color:#fff;
-
     font-size:16px;
 }
 
 .event-place{
-    position:absolute;
-
-    left:20px;
-    top:215px;
-
     color:white;
-
     font-size:16px;
 }
 
@@ -181,26 +161,20 @@ body{
 }
 
 .separator{
-    position:absolute;
-
-    left:20px;
-    top:255px;
-
     width:140px;
     height:1px;
-
     background:rgba(255,255,255,.35);
 }
 
 .event-time{
-    position:absolute;
-
-    left:20px;
-    top:270px;
-
     color:white;
-
     font-size:16px;
-
     font-weight:600;
+}
+
+.event-info{
+    position:absolute;
+    left:20px;
+    top:70px;
+    width:180px;
 }
