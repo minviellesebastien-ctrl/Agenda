@@ -2,8 +2,9 @@ document.getElementById("app").innerHTML = `
 <div class="event-card">
 
     <div class="countdown">
-        J-21
-    </div>
+    <small>⌛ DANS 21 JOURS</small>
+    <strong>J-21</strong>
+</div>
 
     <div class="event-title">
         INDOCHINE
