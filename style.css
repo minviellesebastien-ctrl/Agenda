@@ -38,16 +38,18 @@ body{
 
 .event-card{
 
+    position:relative;
+
     width:100%;
     aspect-ratio:3/2;
 
-    margin-top:235px;
+    margin-top:220px;
 
     border-radius:28px;
 
     overflow:hidden;
 
-    background:rgba(255,255,255,.08);
+    background:url("concert.png") center/cover no-repeat;
 }
 
 /* ---------- Petite carte ---------- */
@@ -97,4 +99,58 @@ body{
 
     transform:scale(.96);
 
+}
+
+.daysBadge{
+
+    position:absolute;
+
+    top:24px;
+    right:24px;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    background:rgba(0,0,0,.35);
+    backdrop-filter:blur(8px);
+
+    font-size:17px;
+    font-weight:700;
+}
+
+.eventText{
+
+    position:absolute;
+
+    left:34px;
+    bottom:34px;
+
+    width:42%;
+}
+
+.eventText h1{
+
+    font-size:48px;
+    font-weight:800;
+
+    margin-bottom:26px;
+}
+
+.eventText p{
+
+    font-size:22px;
+
+    margin-top:12px;
+}
+
+.separator{
+
+    width:75%;
+
+    height:1px;
+
+    margin:20px 0;
+
+    background:rgba(255,255,255,.25);
 }
