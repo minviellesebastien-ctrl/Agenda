@@ -3,7 +3,6 @@ document.getElementById("app").innerHTML = `
 
     <div class="countdown">
     <small>⌛ DANS 21 JOURS</small>
-    <strong>J-21</strong>
 </div>
 
     <div class="event-title">
