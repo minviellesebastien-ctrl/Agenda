@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda Culturel</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agenda Culturel</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div id="app"></div>
+<div id="app">
 
-    <script src="script.js"></script>
+    <div id="carte">
+        <div id="jrestant">J-21</div>
+
+        <div id="infos">
+            <h2 id="titre"></h2>
+
+            <div id="lieu"></div>
+
+            <div id="date"></div>
+
+            <div id="heure"></div>
+        </div>
+    </div>
+
+    <div id="compteur">
+        <span id="nbEvents">0</span>
+        <p>ÉVÉNEMENTS</p>
+    </div>
+
+    <button id="btnListe">
+        Mes événements
+    </button>
+
+    <button id="btnAjout">
+        Ajouter un événement
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
