@@ -69,19 +69,30 @@ body{
 /* ===== TEXTES ===== */
 
 .event-title{
+    position:absolute;
+    left:20px;
+    top:60px;
+
     color:#fff;
     font-size:28px;
-    font-weight:bold;
-    padding-bottom:16px;
+    font-weight:700;
 }
 
 .event-date{
+    position:absolute;
+    left:20px;
+    top:118px;
+
     color:#fff;
     font-size:16px;
 }
 
 .event-place{
-    color:white;
+    position:absolute;
+    left:20px;
+    top:148px;
+
+    color:#fff;
     font-size:16px;
 }
 
@@ -162,25 +173,22 @@ body{
 }
 
 .separator{
+    position:absolute;
+    left:20px;
+    top:178px;
+
     width:140px;
     height:1px;
+
     background:rgba(255,255,255,.35);
 }
 
 .event-time{
-    color:white;
-    font-size:16px;
-    font-weight:600;
-}
-
-.event-info{
     position:absolute;
     left:20px;
-    top:70px;
-    width:180px;
+    top:190px;
 
-    display:flex;
-    flex-direction:column;
-
-    gap:16px;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
 }
