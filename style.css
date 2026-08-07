@@ -24,3 +24,107 @@ body{
     height:100vh;
     position:relative;
 }
+
+.event-card{
+    position:absolute;
+    top:210px;
+    left:50%;
+    transform:translateX(-50%);
+    width:88%;
+    aspect-ratio:1.5;
+    background:url("concert.png") center/contain no-repeat;
+}
+
+.countdown{
+    position:absolute;
+    top:18px;
+    right:18px;
+
+    background:#0b5;
+
+    color:white;
+
+    font-weight:bold;
+
+    padding:8px 14px;
+
+    border-radius:14px;
+
+    font-size:15px;
+}
+
+.event-info{
+    position:absolute;
+    left:28px;
+    top:34px;
+    color:white;
+}
+
+.type{
+    font-size:13px;
+    font-weight:bold;
+    letter-spacing:1px;
+    opacity:.9;
+}
+
+.event-info h2{
+    margin-top:8px;
+    font-size:34px;
+}
+
+.date{
+    margin-top:26px;
+    font-size:18px;
+}
+
+.place{
+    margin-top:16px;
+    font-size:18px;
+    line-height:1.4;
+}
+
+.event-total{
+    position:absolute;
+    top:760px;
+    width:100%;
+    text-align:center;
+    color:white;
+}
+
+.event-total span{
+    display:block;
+    font-size:44px;
+    font-weight:bold;
+}
+
+.event-total small{
+    font-size:16px;
+    letter-spacing:2px;
+}
+
+.btn{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+
+    width:82%;
+    height:62px;
+
+    border:none;
+
+    border-radius:18px;
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:bold;
+}
+
+.blue{
+    top:890px;
+}
+
+.orange{
+    top:970px;
+}
