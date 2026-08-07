@@ -6,17 +6,22 @@ document.getElementById("app").innerHTML = `
 </div>
 
     <div class="event-title">
-        INDOCHINE
-    </div>
+    INDOCHINE
+</div>
 
-    <div class="event-date">
-        28 août 2026 • 20:00
-    </div>
+<div class="event-date">
+    28 août 2026
+</div>
 
-    <div class="event-place">
-        Stade de France<br>
-        Saint-Denis
-    </div>
+<div class="event-place">
+    Stade de France
+</div>
+
+<div class="separator"></div>
+
+<div class="event-time">
+    20:00
+</div>
 
 </div>
 
