@@ -44,21 +44,21 @@ body{
 
     top:10px;
     right:10px;
-
-    height:42px;
-    padding:0 16px;
+    width:105px;
+    height:34px;
+    padding:0 10px;
 
     display:flex;
     align-items:center;
     justify-content:center;
 
-    border-radius:16px;
+    border-radius:14px;
 
     background:rgba(45,22,0,.82);
 
     color:#ff9a2f;
 
-    font-size:12px;
+    font-size:10px;
     font-weight:700;
 
     box-shadow:
