@@ -104,27 +104,30 @@ body{
 
 .btn{
     position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-
-    width:82%;
-    height:62px;
+    width:42%;
+    aspect-ratio:1/1;
 
     border:none;
-
-    border-radius:18px;
+    border-radius:32px;
 
     color:white;
-
     font-size:20px;
-
     font-weight:bold;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    bottom:120px;
 }
 
 .blue{
-    top:890px;
+    left:5%;
+    background:#0b234a;
 }
 
 .orange{
-    top:970px;
+    right:5%;
+    background:#d96b08;
 }
