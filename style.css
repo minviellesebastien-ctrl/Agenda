@@ -22,6 +22,7 @@ body{
 /* ---------- Accueil ---------- */
 
 .home{
+
     width:100%;
     height:100dvh;
 
@@ -29,9 +30,9 @@ body{
     flex-direction:column;
 
     padding:
-        max(env(safe-area-inset-top),30px)
-        22px
-        max(env(safe-area-inset-bottom),28px);
+        max(env(safe-area-inset-top),20px)
+        0
+        max(env(safe-area-inset-bottom),24px);
 }
 
 /* ---------- Grande carte ---------- */
@@ -40,16 +41,16 @@ body{
 
     position:relative;
 
-    width:100%;
-    aspect-ratio:3/2;
+    width:92%;
+    max-width:420px;
 
-    margin-top:220px;
+    aspect-ratio:1200/800;
 
-    border-radius:28px;
+    margin:185px auto 0;
+
+    background:url("concert.png") center/contain no-repeat;
 
     overflow:hidden;
-
-    background:url("concert.png") center/cover no-repeat;
 }
 
 /* ---------- Petite carte ---------- */
