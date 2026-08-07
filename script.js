@@ -5,28 +5,18 @@ document.getElementById("app").innerHTML = `
     <small>⌛ DANS 21 JOURS</small>
 </div>
 
-    <div class="event-title">
-    INDOCHINE
-</div>
+    <div class="event-info">
 
-<div class="event-date">
-    28 août 2026
-</div>
+    <div class="event-title">INDOCHINE</div>
 
-<div class="event-place">
-    Stade de France
-</div>
+    <div class="event-date">28 août 2026</div>
 
-<div class="separator"></div>
+    <div class="event-place">Stade de France</div>
 
-<div class="event-time">
-    20:00
-</div>
+    <div class="separator"></div>
 
-<div class="separator"></div>
+    <div class="event-time">20:00</div>
 
-<div class="event-time">
-    20:00
 </div>
 
 </div>
