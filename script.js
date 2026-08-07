@@ -1,33 +1,39 @@
 document.getElementById("app").innerHTML = `
 <div class="event-card">
-    <div class="countdown">J-21</div>
 
-    <div class="event-info">
-        <div class="type">CONCERT</div>
-
-        <h2>INDOCHINE</h2>
-
-        <div class="date">
-            28 août 2026 • 20:00
-        </div>
-
-        <div class="place">
-            Stade de France<br>
-            Saint-Denis
-        </div>
+    <div class="countdown">
+        J-21
     </div>
+
+    <div class="event-title">
+        INDOCHINE
+    </div>
+
+    <div class="event-date">
+        28 août 2026 • 20:00
+    </div>
+
+    <div class="event-place">
+        Stade de France<br>
+        Saint-Denis
+    </div>
+
 </div>
 
-<div class="event-total">
+<div class="event-counter">
     <span>27</span>
-    <small>ÉVÉNEMENTS</small>
+    <p>ÉVÉNEMENTS</p>
 </div>
 
-<button class="btn blue">
-    Mes événements
-</button>
+<div class="buttons">
 
-<button class="btn orange">
-    Ajouter un événement
-</button>
+    <button class="btn blue">
+        Mes<br>événements
+    </button>
+
+    <button class="btn orange">
+        Ajouter un<br>événement
+    </button>
+
+</div>
 `;
