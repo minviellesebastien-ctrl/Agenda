@@ -85,7 +85,13 @@ if(events.length===0){
 
 document.querySelectorAll(".carte").forEach(carte => {
 
-    carte.addEventListener("click", () => {
+    carte.addEventListener("touchend", (e) => {
+
+    e.preventDefault();
+
+    alert("clic détecté");
+
+});
 
         document
             alert("clic détecté");
