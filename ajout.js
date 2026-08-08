@@ -41,10 +41,6 @@ document.getElementById("app").innerHTML = `
     inputmode="numeric"
     maxlength="5">
 
-<label class="label">VILLE</label>
-<input
-    type="text"
-    id="ville">
 
 <label class="label">LIEU</label>
 <input
@@ -117,7 +113,6 @@ document.getElementById("btnEnregistrer").addEventListener("click", () => {
         titre: document.getElementById("titre").value.trim(),
         date: document.getElementById("date").value.trim(),
         heure: document.getElementById("heure").value.trim(),
-        ville: document.getElementById("ville").value.trim(),
         lieu: document.getElementById("lieu").value.trim()
     };
 
@@ -125,7 +120,6 @@ document.getElementById("btnEnregistrer").addEventListener("click", () => {
         !evenement.titre ||
         !evenement.date ||
         !evenement.heure ||
-        !evenement.ville ||
         !evenement.lieu
     ) {
         alert("Complète tous les champs.");
