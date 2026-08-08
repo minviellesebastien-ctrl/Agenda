@@ -18,9 +18,13 @@ document.getElementById("app").innerHTML = `
 
 <div class="formulaire">
 
-    <input type="text" placeholder="Titre">
+<label class="label">TITRE</label>
+<input
+    type="text"
+    id="titre"
+    placeholder="Indochine">
 
-    <label>Date</label>
+<label class="label">DATE</label>
 <input
     type="text"
     id="date"
@@ -28,7 +32,7 @@ document.getElementById("app").innerHTML = `
     inputmode="numeric"
     maxlength="10">
 
-<label>Heure</label>
+<label class="label">HEURE</label>
 <input
     type="text"
     id="heure"
@@ -36,9 +40,17 @@ document.getElementById("app").innerHTML = `
     inputmode="numeric"
     maxlength="5">
 
-    <input type="text" placeholder="Ville">
+<label class="label">VILLE</label>
+<input
+    type="text"
+    id="ville"
+    placeholder="Paris">
 
-    <input type="text" placeholder="Lieu">
+<label class="label">LIEU</label>
+<input
+    type="text"
+    id="lieu"
+    placeholder="Stade de France">
 
 </div>
 
