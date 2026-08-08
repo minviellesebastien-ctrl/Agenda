@@ -132,7 +132,7 @@ body{
 
     position:absolute;
 
-    bottom:60px;
+    bottom:95px;
 
     width:100%;
 
@@ -221,6 +221,9 @@ body{
     user-select:none;
     -webkit-user-drag:none;
     transition:transform .15s;
+    border-radius:34px;
+    overflow:hidden;
+    display:block;
 }
 
 .btn-img:active{
