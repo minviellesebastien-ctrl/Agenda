@@ -92,15 +92,16 @@ body{
 
     position:absolute;
 
-    left:32px;
+    left:22px;
 
-    top:14px;
+    top:34px;
 
     color:#fff;
 
     font-size:18px;
 
     font-weight:700;
+    line-height:1;
 }
 
 .date{
