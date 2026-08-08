@@ -93,7 +93,7 @@ document.querySelectorAll(".carte").forEach(carte => {
 
         if (
     derniereCarte === carte &&
-    maintenant - dernierTap < 350
+    maintenant - dernierTap < 600
 ) {
 
     document
