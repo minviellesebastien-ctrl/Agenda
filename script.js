@@ -6,8 +6,6 @@ document.getElementById("app").innerHTML = `
     <span>DANS 21 JOURS</span>
 </div>
 
-    <div class="event-info">
-
     <div class="event-title">INDOCHINE</div>
 
     <div class="event-date">
@@ -25,7 +23,6 @@ document.getElementById("app").innerHTML = `
 <div class="event-time">
     <img src="clock.svg" class="icon">
     <span>20:00</span>
-</div>
 </div>
 
 </div>
