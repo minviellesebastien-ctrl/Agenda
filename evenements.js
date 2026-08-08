@@ -27,24 +27,37 @@ if(events.length===0){
 
 }else{
 
-    events.forEach(event=>{
+    events.forEach((event,index)=>{
 
-        liste.innerHTML+=`
+    const imageFond={
+        concert:"concert_petite.png",
+        sport:"sport_petite.png",
+        spectacle:"spectacle_petite.png",
+        divers:"divers_petite.png"
+    }[event.categorie];
 
-        <div class="carte ${event.categorie}">
+    liste.innerHTML+=`
 
-            <h2>${event.titre}</h2>
+    <div class="carte">
 
-            <p>${event.date} • ${event.heure}</p>
+        <img src="${imageFond}" class="fondCarte">
 
-            <p>${event.lieu}</p>
+        <div class="infos">
 
-            <p>${event.ville}</p>
+            <div class="titre">${event.titre}</div>
+
+            <div class="date">${event.date}</div>
+
+            <div class="heure">${event.heure}</div>
+
+            <div class="lieu">${event.lieu}</div>
+
+            <div class="ville">${event.ville}</div>
 
         </div>
 
-        `;
+    </div>
 
-    });
+    `;
 
-}
+});
