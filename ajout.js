@@ -1,8 +1,12 @@
 document.getElementById("app").innerHTML = `
 
-<a href="index.html" class="back">←</a>
+<header class="topbar">
 
-<h1>Ajouter un événement</h1>
+    <a href="index.html" class="back">←</a>
+
+    <h1>Ajouter un événement</h1>
+
+</header>
 
 <div class="categories">
 
