@@ -141,6 +141,8 @@ document
     .getElementById("btnConfirmerSuppr")
     .addEventListener("click", () => {
 
+alert(evenementSelectionne);
+        
         const nouveauxEvents = events.filter(
             event => event.id !== evenementSelectionne
         );
