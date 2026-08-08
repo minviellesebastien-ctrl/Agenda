@@ -89,8 +89,9 @@ document.querySelectorAll(".carte").forEach(carte => {
 
     e.preventDefault();
 
-    alert("clic détecté");
-
+    document
+    .getElementById("overlay")
+    .classList.remove("hidden");
 });
 });
         
