@@ -53,7 +53,7 @@ if (event) {
 
 const nbEvents = events.length;
 
-const texteCompteur = `${nbEvents} À VENIR`;
+const texteCompteur = `${nbEvents} ÉVÈNEMENTS À VENIR`;
 
 
 document.getElementById("app").innerHTML = `
