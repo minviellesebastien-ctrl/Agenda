@@ -82,8 +82,7 @@ body{
     cursor:pointer;
     user-select:none;
     -webkit-user-drag:none;
-    transform:scale(1.15);
-    filter:brightness(1.5);
+    transition:transform .2s, filter .2s;
 }
 
 .formulaire{
