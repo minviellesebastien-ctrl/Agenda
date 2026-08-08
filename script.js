@@ -45,3 +45,4 @@ document.getElementById("app").innerHTML = `
          alt="Ajouter un événement">
 
 </div>
+`;
