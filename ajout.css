@@ -23,40 +23,48 @@ body{
 }
 
 .topbar{
+    position:relative;
 
-    display:grid;
+    margin-top:25px;
 
-    grid-template-columns:50px 1fr 50px;
-
-    align-items:center;
-
-    margin:25px 20px 15px;
+    height:40px;
 }
 
 .back{
+    position:absolute;
+
+    left:20px;
+
+    top:50%;
+
+    transform:translateY(-50%);
 
     color:#fff;
 
     text-decoration:none;
 
     font-size:34px;
-
-    line-height:1;
-
-    justify-self:start;
 }
 
 .topbar h1{
 
-    margin:0;
+    position:absolute;
 
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    margin:0;
+    margin-left:18px;
     color:#fff;
 
     font-size:22px;
 
     font-weight:700;
 
-    text-align:center;
+    white-space:nowrap;
 }
 
 .categories{
