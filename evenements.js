@@ -92,15 +92,17 @@ document.querySelectorAll(".carte").forEach(carte => {
         timerAppui = setTimeout(() => {
 
             document
+    document
     .getElementById("overlay")
-    .classList.remove("cache");
+    .classList.remove("hidden");
             document
     .getElementById("btnAnnuler")
     .onclick = () => {
 
     document
-        .getElementById("overlay")
-        .classList.add("cache");
+        document
+    .getElementById("overlay")
+    .classList.add("hidden");
 
 };
 
