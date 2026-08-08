@@ -46,11 +46,20 @@ if(events.length===0){
 
             <div class="titre">${event.titre}</div>
 
-            <div class="date">${event.date}</div>
+            <div class="date">
+    <img src="calendar.svg" class="icon">
+    <span>${event.date}</span>
+</div>
 
-            <div class="heure">${event.heure}</div>
+<div class="lieu">
+    <img src="location.svg" class="icon">
+    <span>${event.lieu}</span>
+</div>
 
-            <div class="lieu">${event.lieu}</div>
+<div class="heure">
+    <img src="clock.svg" class="icon">
+    <span>${event.heure}</span>
+</div>
 
             <div class="ville">${event.ville}</div>
 
