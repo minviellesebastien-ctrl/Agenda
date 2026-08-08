@@ -2,7 +2,8 @@ document.getElementById("app").innerHTML = `
 <div class="event-card">
 
     <div class="countdown">
-    <small>⌛ DANS 21 JOURS</small>
+    <img src="main/hourglass.svg" class="icon-hourglass" alt="">
+    <span>DANS 21 JOURS</span>
 </div>
 
     <div class="event-info">
