@@ -50,7 +50,7 @@ if(events.length===0){
 
     liste.innerHTML+=`
 
-    <div class="carte">
+    <div class="carte" data-id="${event.id}">
 
         <img src="${imageFond}" class="fondCarte">
 
@@ -82,3 +82,35 @@ if(events.length===0){
 
 });
 }
+
+let timerAppui;
+
+document.querySelectorAll(".carte").forEach(carte => {
+
+    carte.addEventListener("touchstart", () => {
+
+        timerAppui = setTimeout(() => {
+
+            alert(
+`📋 Détails
+
+✏️ Modifier
+
+🗑️ Supprimer
+
+✖ Annuler`
+            );
+
+        }, 2000);
+
+    });
+
+    carte.addEventListener("touchend", () => {
+        clearTimeout(timerAppui);
+    });
+
+    carte.addEventListener("touchmove", () => {
+        clearTimeout(timerAppui);
+    });
+
+});
