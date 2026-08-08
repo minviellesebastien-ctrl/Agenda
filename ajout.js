@@ -22,13 +22,11 @@ document.getElementById("app").innerHTML = `
 <input
     type="text"
     id="titre"
-    placeholder="Indochine">
 
 <label class="label">DATE</label>
 <input
     type="text"
     id="date"
-    placeholder="15/08/2026"
     inputmode="numeric"
     maxlength="10">
 
@@ -36,7 +34,6 @@ document.getElementById("app").innerHTML = `
 <input
     type="text"
     id="heure"
-    placeholder="20:15"
     inputmode="numeric"
     maxlength="5">
 
@@ -44,13 +41,11 @@ document.getElementById("app").innerHTML = `
 <input
     type="text"
     id="ville"
-    placeholder="Paris">
 
 <label class="label">LIEU</label>
 <input
     type="text"
     id="lieu"
-    placeholder="Stade de France">
 
 </div>
 
