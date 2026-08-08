@@ -83,36 +83,34 @@ if(events.length===0){
 });
 }
 
-let timerAppui;
+let dernierTap = 0;
 
 document.querySelectorAll(".carte").forEach(carte => {
 
-    carte.addEventListener("touchstart", () => {
+    carte.addEventListener("click", () => {
 
-        timerAppui = setTimeout(() => {
+        const maintenant = Date.now();
 
-    document
-    .getElementById("overlay")
-    .classList.remove("cache");
-    document
-    .getElementById("btnAnnuler")
-    .onclick = () => {
-    document
-    .getElementById("overlay")
-    .classList.add("cache");
+        if (maintenant - dernierTap < 350) {
 
-};
+            document
+                .getElementById("overlay")
+                .classList.remove("hidden");
 
-        }, 2000);
+        }
 
-    });
+        dernierTap = maintenant;
 
-    carte.addEventListener("touchend", () => {
-        clearTimeout(timerAppui);
-    });
-
-    carte.addEventListener("touchmove", () => {
-        clearTimeout(timerAppui);
     });
 
 });
+
+document
+    .getElementById("btnAnnuler")
+    .addEventListener("click", () => {
+
+        document
+            .getElementById("overlay")
+            .classList.add("hidden");
+
+    });
