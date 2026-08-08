@@ -51,6 +51,14 @@ if (event) {
 
 }
 
+const nbEvents = events.length;
+
+const texteCompteur =
+    nbEvents > 1
+    ? "ÉVÉNEMENTS À VENIR"
+    : "ÉVÉNEMENT À VENIR";
+
+
 document.getElementById("app").innerHTML = `
 
 <div class="event-card" style="background-image:url('${imageCarte}')">
@@ -83,9 +91,21 @@ document.getElementById("app").innerHTML = `
 
 </div>
 
-<img src="compteur.png"
-     id="compteur"
-     alt="Compteur">
+<div id="compteurBox">
+
+    <img src="compteur.png"
+         id="compteur"
+         alt="Compteur">
+
+    <div id="compteurTexte">
+
+        <div id="nbEvents">${nbEvents}</div>
+
+        <div id="labelEvents">${texteCompteur}</div>
+
+    </div>
+
+</div>
 
 <div id="nbEvents">${events.length}</div>
 
