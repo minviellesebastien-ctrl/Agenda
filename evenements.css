@@ -101,34 +101,22 @@ body{
 .date{
 
     position:absolute;
-
-    left:28px;
-
-    top:68px;
-
+    left:18px;
+    top:64px;
     display:flex;
-
     align-items:center;
-
     color:#fff;
-
     font-size:12px;
 }
 
 .lieu{
 
     position:absolute;
-
-    left:28px;
-
-    top:90px;
-
+    left:18px;
+    top:84px;
     display:flex;
-
     align-items:center;
-
     color:#fff;
-
     font-size:12px;
 }
 
@@ -136,18 +124,12 @@ body{
 
     position:absolute;
 
-    left:28px;
-
-    top:118px;
-
+    left:18px;
+    top:108px;
     display:flex;
-
     align-items:center;
-
     color:#fff;
-
     font-size:12px;
-
     font-weight:600;
 }
 
@@ -157,7 +139,7 @@ body{
 
     height:12px;
 
-    margin-right:8px;
+    margin-right:5px;
 
     flex-shrink:0;
 }
