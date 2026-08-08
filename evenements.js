@@ -39,6 +39,8 @@ if(events.length===0){
 
 }else{
 
+let evenementSelectionne = null;
+    
     events.forEach((event,index)=>{
 
     const imageFond={
@@ -86,6 +88,8 @@ if(events.length===0){
 document.querySelectorAll(".carte").forEach(carte => {
 
     carte.addEventListener("click", () => {
+        
+        evenementSelectionne = event.id;
 
         document
             .getElementById("overlay")
@@ -98,9 +102,30 @@ document.querySelectorAll(".carte").forEach(carte => {
 document
     .getElementById("btnAnnuler")
     .addEventListener("click", () => {
+        
+document
+     .getElementById("overlay")
+     .classList.add("cache");
 
-        document
-            .getElementById("overlay")
-            .classList.add("cache");
+    });
+
+document
+    .getElementById("btnSupprimer")
+    .addEventListener("click", () => {
+
+        if (!confirm("Supprimer cet événement ?")) {
+            return;
+        }
+
+        const nouveauxEvents = events.filter(
+            event => event.id !== evenementSelectionne
+        );
+
+        localStorage.setItem(
+            "agenda-events",
+            JSON.stringify(nouveauxEvents)
+        );
+
+        location.reload();
 
     });
