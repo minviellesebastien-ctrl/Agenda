@@ -48,11 +48,16 @@ h1{
 }
 
 .categorie{
-    width:72px;
+    width:74px;
+    height:auto;
+
+    transition:.18s;
 
     cursor:pointer;
 
-    transition:.2s;
+    user-select:none;
+
+    -webkit-user-drag:none;
 }
 
 .formulaire{
@@ -67,19 +72,21 @@ h1{
 
 .formulaire input{
 
-    height:54px;
+    height:52px;
 
     border:none;
 
-    border-radius:16px;
+    border-radius:18px;
 
     padding:0 18px;
 
-    background:#1c2333;
+    background:#1a2130;
 
     color:white;
 
     font-size:16px;
+
+    outline:none;
 }
 
 #btnEnregistrer{
@@ -93,4 +100,18 @@ h1{
     transform:translateX(-50%);
 
     width:88%;
+}
+
+.formulaire input::placeholder{
+
+    color:#8e98a8;
+}
+
+.categorie.active{
+
+    filter:
+        brightness(1.25)
+        drop-shadow(0 0 12px rgba(255,180,70,.45));
+
+    transform:scale(1.04);
 }
