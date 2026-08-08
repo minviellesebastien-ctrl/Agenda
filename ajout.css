@@ -24,8 +24,8 @@ body{
 
 .back{
     position:absolute;
-    top:40px;
-    left:25px;
+    top:42px;
+    left:22px;
 
     color:white;
     text-decoration:none;
@@ -36,7 +36,7 @@ h1{
     text-align:center;
     color:white;
     font-size:28px;
-    margin-top:45px;
+    margin-top:35px;
 }
 
 .categories{
