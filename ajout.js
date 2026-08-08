@@ -20,9 +20,21 @@ document.getElementById("app").innerHTML = `
 
     <input type="text" placeholder="Titre">
 
-    <input type="text" placeholder="Date">
+    <label>Date</label>
+<input
+    type="text"
+    id="date"
+    placeholder="15/08/2026"
+    inputmode="numeric"
+    maxlength="10">
 
-    <input type="text" placeholder="Heure">
+<label>Heure</label>
+<input
+    type="text"
+    id="heure"
+    placeholder="20:15"
+    inputmode="numeric"
+    maxlength="5">
 
     <input type="text" placeholder="Ville">
 
