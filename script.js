@@ -2,7 +2,7 @@ document.getElementById("app").innerHTML = `
 <div class="event-card">
 
     <div class="countdown">
-    <img src="main/hourglass.svg" class="icon-hourglass" alt="">
+    <img src="hourglass.svg" class="icon-hourglass" alt="">
     <span>DANS 21 JOURS</span>
 </div>
 
@@ -11,19 +11,19 @@ document.getElementById("app").innerHTML = `
     <div class="event-title">INDOCHINE</div>
 
     <div class="event-date">
-    <img src="main/calendar.svg" class="icon">
+    <img src="calendar.svg" class="icon">
     <span>28 août 2026</span>
 </div>
 
 <div class="event-place">
-    <img src="main/location.svg" class="icon">
+    <img src="location.svg" class="icon">
     <span>Stade de France</span>
 </div>
 
 <div class="separator"></div>
 
 <div class="event-time">
-    <img src="main/clock.svg" class="icon">
+    <img src="clock.svg" class="icon">
     <span>20:00</span>
 </div>
 </div>
