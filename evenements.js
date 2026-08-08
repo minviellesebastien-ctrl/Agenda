@@ -85,14 +85,26 @@ if(events.length===0){
 
 document.querySelectorAll(".carte").forEach(carte => {
 
+    let debutY = 0;
+
+    carte.addEventListener("touchstart", (e) => {
+        debutY = e.touches[0].clientY;
+    });
+
     carte.addEventListener("touchend", (e) => {
 
-    e.preventDefault();
+        const finY = e.changedTouches[0].clientY;
 
-    document
-    .getElementById("overlay")
-    .classList.remove("hidden");
-});
+        if (Math.abs(finY - debutY) > 10) {
+            return;
+        }
+
+        document
+            .getElementById("overlay")
+            .classList.remove("hidden");
+
+    });
+
 });
         
 document
