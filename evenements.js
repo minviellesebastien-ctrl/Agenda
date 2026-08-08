@@ -83,27 +83,14 @@ if(events.length===0){
 });
 }
 
-let dernierTap = 0;
-let derniereCarte = null;
-
 document.querySelectorAll(".carte").forEach(carte => {
 
     carte.addEventListener("click", () => {
-        const maintenant = Date.now();
 
-        if (
-    derniereCarte === carte &&
-    maintenant - dernierTap < 600
-) {
+        document
+            .getElementById("overlay")
+            .classList.remove("hidden");
 
-    document
-        .getElementById("overlay")
-        .classList.remove("hidden");
-
-}
-
-dernierTap = maintenant;
-derniereCarte = carte;
     });
 
 });
