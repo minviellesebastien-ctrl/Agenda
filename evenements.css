@@ -87,38 +87,38 @@ body{
 
 .titre{
     position:absolute;
-    left:20px;
-    top:38px;
+    left:18px;
+    top:26px;
+
     color:#fff;
-    font-size:22px;
+    font-size:18px;
     font-weight:700;
 }
 
 .date{
     position:absolute;
-    left:20px;
-    top:90px;
+    left:18px;
+    top:64px;
+
     color:#fff;
-    font-size:14px;
+    font-size:12px;
 }
 
 .lieu{
     position:absolute;
-    left:20px;
-    top:116px;
+    left:18px;
+    top:84px;
+
     color:#fff;
-    font-size:14px;
+    font-size:12px;
 }
 
 .heure{
     position:absolute;
-    left:20px;
-    bottom:28px;
-    color:#fff;
-    font-size:14px;
-    font-weight:600;
-}
+    left:18px;
+    top:120px;
 
-.ville{
-    display:none;
+    color:#fff;
+    font-size:12px;
+    font-weight:600;
 }
