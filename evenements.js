@@ -17,6 +17,18 @@ const liste = document.getElementById("liste");
 const events =
     JSON.parse(localStorage.getItem("agenda-events")) || [];
 
+events.sort((a, b) => {
+
+    const [ja, ma, aa] = a.date.split("/");
+    const [jb, mb, ab] = b.date.split("/");
+
+    const dateA = new Date(aa, ma - 1, ja);
+    const dateB = new Date(ab, mb - 1, jb);
+
+    return dateA - dateB;
+
+});
+
 if(events.length===0){
 
     liste.innerHTML=`
