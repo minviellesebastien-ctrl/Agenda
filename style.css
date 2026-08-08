@@ -122,14 +122,14 @@ body{
 .buttons{
 
     position:absolute;
-
-    bottom:95px;
-
-    width:100%;
-
+    bottom:40px;
+    left:20px;
+    right:20px;
     display:flex;
 
-    justify-content:space-evenly;
+    justify-content:space-between;
+
+    align-items:center;
 }
 
 .btn{
@@ -207,7 +207,7 @@ body{
 }
 
 .btn-img{
-    width:145px;
+    width:47%;
     cursor:pointer;
     user-select:none;
     -webkit-user-drag:none;
