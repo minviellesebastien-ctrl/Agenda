@@ -1,4 +1,28 @@
-const events = JSON.parse(localStorage.getItem("agenda-events")) || [];
+let events = JSON.parse(localStorage.getItem("agenda-events")) || [];
+
+const maintenant = new Date();
+
+events = events.filter(event => {
+
+    const [j, m, a] = event.date.split("/");
+    const [h, min] = event.heure.split(":");
+
+    const dateEvent = new Date(
+        Number(a),
+        Number(m) - 1,
+        Number(j),
+        Number(h),
+        Number(min)
+    );
+
+    return dateEvent >= maintenant;
+
+});
+
+localStorage.setItem(
+    "agenda-events",
+    JSON.stringify(events)
+);
 
 events.sort((a, b) => {
 
