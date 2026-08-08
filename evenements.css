@@ -38,6 +38,7 @@ body{
 }
 
 .topbar h1{
+
     position:absolute;
     left:50%;
     top:50%;
@@ -45,8 +46,10 @@ body{
     margin-left:18px;
 
     color:#fff;
-    font-size:22px;
+    font-size:20px;
     font-weight:700;
+
+    white-space:nowrap;
 }
 
 #liste{
