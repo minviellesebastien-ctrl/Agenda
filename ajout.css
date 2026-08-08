@@ -61,18 +61,18 @@ h1{
 }
 
 .formulaire{
-    margin:20px 20px;
+    margin:14px 20px;
 
     display:flex;
 
     flex-direction:column;
 
-    gap:10px;
+    gap:6px;
 }
 
 .formulaire input{
 
-    height:50px;
+    height:46px;
 
     border:none;
 
@@ -91,16 +91,9 @@ h1{
 }
 
 #btnEnregistrer{
-
-    position:absolute;
-
-    left:50%;
-
-    bottom:40px;
-
-    transform:translateX(-50%);
-
-    width:88%;
+    display:block;
+    width:calc(100% - 40px);
+    margin:18px auto 25px;
 }
 
 .formulaire input::placeholder{
@@ -118,18 +111,11 @@ h1{
 }
 
 .label{
-
     display:block;
-
-    margin:8px 0 5px;
-
-    color:#9da7b8;
-
+    margin:6px 0 4px;
+    color:#b8c2d3;
     font-size:12px;
-
     font-weight:700;
-
-    letter-spacing:1.3px;
-
+    letter-spacing:1px;
     text-transform:uppercase;
 }
