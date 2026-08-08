@@ -53,10 +53,7 @@ if (event) {
 
 const nbEvents = events.length;
 
-const texteCompteur =
-    nbEvents > 1
-    ? "ÉVÉNEMENTS À VENIR"
-    : "ÉVÉNEMENT À VENIR";
+const texteCompteur = `${nbEvents} À VENIR`;
 
 
 document.getElementById("app").innerHTML = `
