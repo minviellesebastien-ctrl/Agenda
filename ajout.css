@@ -24,24 +24,16 @@ body{
 
 .topbar{
 
-    display:flex;
+    display:grid;
+
+    grid-template-columns:50px 1fr 50px;
 
     align-items:center;
 
-    justify-content:center;
-
-    position:relative;
-
-    margin-top:25px;
-
-    margin-bottom:15px;
+    margin:25px 20px 15px;
 }
 
 .back{
-
-    position:absolute;
-
-    left:20px;
 
     color:#fff;
 
@@ -50,15 +42,21 @@ body{
     font-size:34px;
 
     line-height:1;
+
+    justify-self:start;
 }
 
 .topbar h1{
+
+    margin:0;
 
     color:#fff;
 
     font-size:22px;
 
     font-weight:700;
+
+    text-align:center;
 }
 
 .categories{
