@@ -27,6 +27,10 @@ document.getElementById("app").innerHTML = `
 
 </div>
 
+<img src="compteur.png"
+     id="compteur"
+     alt="Compteur des événements">
+
 <div class="buttons">
 
     <img src="btn-evenements.png"
