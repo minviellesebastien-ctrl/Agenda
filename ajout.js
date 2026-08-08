@@ -47,3 +47,32 @@ document.getElementById("app").innerHTML = `
      alt="Enregistrer">
 
 `;
+
+const dateInput = document.getElementById("date");
+
+dateInput.addEventListener("input", () => {
+
+    let v = dateInput.value.replace(/\D/g, "");
+
+    if (v.length > 2)
+        v = v.slice(0,2) + "/" + v.slice(2);
+
+    if (v.length > 5)
+        v = v.slice(0,5) + "/" + v.slice(5);
+
+    dateInput.value = v.slice(0,10);
+
+});
+
+const heureInput = document.getElementById("heure");
+
+heureInput.addEventListener("input", () => {
+
+    let v = heureInput.value.replace(/\D/g, "");
+
+    if (v.length > 2)
+        v = v.slice(0,2) + ":" + v.slice(2);
+
+    heureInput.value = v.slice(0,5);
+
+});
