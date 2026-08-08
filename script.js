@@ -10,40 +10,42 @@ events.sort((a, b) => {
 });
 
 const event = events[0];
+
 const imageCarte = event
-? {
-    concert: "concert.png",
-    sport: "sport.png",
-    spectacle: "spectacle.png",
-    divers: "divers.png"
-}[event.categorie]
-: "concert.png";
+    ? {
+        concert: "concert.png",
+        sport: "sport.png",
+        spectacle: "spectacle.png",
+        divers: "divers.png"
+    }[event.categorie]
+    : "concert.png";
 
+let countdown = "AUCUN ÉVÉNEMENT";
 
-if(event){
+if (event) {
 
-    const [j,m,a] = event.date.split("/");
+    const [j, m, a] = event.date.split("/");
 
     const aujourdhui = new Date();
-    aujourdhui.setHours(0,0,0,0);
+    aujourdhui.setHours(0, 0, 0, 0);
 
-    const evenement = new Date(a, m-1, j);
+    const dateEvent = new Date(a, m - 1, j);
 
     const diff = Math.ceil(
-        (evenement-aujourdhui)/(1000*60*60*24)
+        (dateEvent - aujourdhui) / (1000 * 60 * 60 * 24)
     );
 
-    if(diff===0){
+    if (diff <= 0) {
 
-        countdown="AUJOURD'HUI";
+        countdown = "AUJOURD'HUI";
 
-    }else if(diff===1){
+    } else if (diff === 1) {
 
-        countdown="DEMAIN";
+        countdown = "DEMAIN";
 
-    }else{
+    } else {
 
-        countdown=`DANS ${diff} JOURS`;
+        countdown = `DANS ${diff} JOURS`;
 
     }
 
@@ -51,41 +53,41 @@ if(event){
 
 document.getElementById("app").innerHTML = `
 
-let countdown = "Aucun événement";
-
-
-<div class="event-card"
-     style="background-image:url('${imageCarte}')">
+<div class="event-card" style="background-image:url('${imageCarte}')">
 
     <div class="countdown">
-    <img src="hourglass.svg" class="icon-hourglass" alt="">
-    <span>${countdown}</span>
-</div>
+        <img src="hourglass.svg" class="icon-hourglass">
+        <span>${countdown}</span>
+    </div>
 
-    <div class="event-title">${event ? event.titre : "Aucun événement"}</div>
+    <div class="event-title">
+        ${event ? event.titre : "Aucun événement"}
+    </div>
 
     <div class="event-date">
-    <img src="calendar.svg" class="icon">
-    <span>${event ? event.date : "--/--/----"}</span>
-</div>
+        <img src="calendar.svg" class="icon">
+        <span>${event ? event.date : "--/--/----"}</span>
+    </div>
 
-<div class="event-place">
-    <img src="location.svg" class="icon">
-    <span>${event ? event.lieu : "-"}</span>
-</div>
+    <div class="event-place">
+        <img src="location.svg" class="icon">
+        <span>${event ? event.lieu : "-"}</span>
+    </div>
 
-<div class="separator"></div>
+    <div class="separator"></div>
 
-<div class="event-time">
-    <img src="clock.svg" class="icon">
-    <span>${event ? event.heure : "--:--"}</span>
-</div>
+    <div class="event-time">
+        <img src="clock.svg" class="icon">
+        <span>${event ? event.heure : "--:--"}</span>
+    </div>
 
 </div>
 
 <img src="compteur.png"
      id="compteur"
-     alt="Compteur des événements">
+     alt="Compteur">
+
+<div id="nbEvents">${events.length}</div>
 
 <div class="buttons">
 
@@ -100,6 +102,7 @@ let countdown = "Aucun événement";
          alt="Ajouter un événement">
 
 </div>
+
 `;
 
 document.getElementById("btnAjouter").onclick = () => {
