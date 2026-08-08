@@ -141,6 +141,15 @@ document
     .getElementById("btnConfirmerSuppr")
     .addEventListener("click", () => {
 
-    
+        const nouveauxEvents = events.filter(
+            event => event.id !== evenementSelectionne
+        );
+
+        localStorage.setItem(
+            "agenda-events",
+            JSON.stringify(nouveauxEvents)
+        );
+
+        location.reload();
 
     });
