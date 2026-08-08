@@ -113,9 +113,44 @@ document
     .getElementById("btnSupprimer")
     .addEventListener("click", () => {
 
-        if (!confirm("Supprimer cet événement ?")) {
-            return;
-        }
+        document
+    .getElementById("overlay")
+    .classList.add("cache");
+
+document
+    .getElementById("overlaySuppr")
+    .classList.remove("cache");
+
+        const nouveauxEvents = events.filter(
+            event => event.id !== evenementSelectionne
+        );
+
+        localStorage.setItem(
+            "agenda-events",
+            JSON.stringify(nouveauxEvents)
+        );
+
+        location.reload();
+
+    });
+
+document
+    .getElementById("btnAnnulerSuppr")
+    .addEventListener("click", () => {
+
+        document
+            .getElementById("overlaySuppr")
+            .classList.add("cache");
+
+        document
+            .getElementById("overlay")
+            .classList.remove("cache");
+
+    });
+
+document
+    .getElementById("btnConfirmerSuppr")
+    .addEventListener("click", () => {
 
         const nouveauxEvents = events.filter(
             event => event.id !== evenementSelectionne
