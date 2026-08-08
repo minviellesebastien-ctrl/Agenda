@@ -74,3 +74,51 @@ body{
 
     font-size:18px;
 }
+
+.fondCarte{
+    width:100%;
+    display:block;
+}
+
+.infos{
+    position:absolute;
+    inset:0;
+}
+
+.titre{
+    position:absolute;
+    left:20px;
+    top:38px;
+    color:#fff;
+    font-size:22px;
+    font-weight:700;
+}
+
+.date{
+    position:absolute;
+    left:20px;
+    top:90px;
+    color:#fff;
+    font-size:14px;
+}
+
+.lieu{
+    position:absolute;
+    left:20px;
+    top:116px;
+    color:#fff;
+    font-size:14px;
+}
+
+.heure{
+    position:absolute;
+    left:20px;
+    bottom:28px;
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
+}
+
+.ville{
+    display:none;
+}
