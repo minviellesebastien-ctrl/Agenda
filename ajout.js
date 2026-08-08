@@ -47,6 +47,11 @@ document.getElementById("app").innerHTML = `
     type="text"
     id="lieu">
 
+<label class="label">ADRESSE</label>
+<input
+    type="text"
+    id="adresse">
+
 </div>
 
 <img src="btn-enregistrer.png"
@@ -109,12 +114,14 @@ document.getElementById("btnEnregistrer").addEventListener("click", () => {
     }
 
     const evenement = {
-        categorie: categorieSelectionnee,
-        titre: document.getElementById("titre").value.trim(),
-        date: document.getElementById("date").value.trim(),
-        heure: document.getElementById("heure").value.trim(),
-        lieu: document.getElementById("lieu").value.trim()
-    };
+    id: Date.now(),
+    categorie: categorieSelectionnee,
+    titre: document.getElementById("titre").value.trim(),
+    date: document.getElementById("date").value.trim(),
+    heure: document.getElementById("heure").value.trim(),
+    lieu: document.getElementById("lieu").value.trim(),
+    adresse: document.getElementById("adresse").value.trim()
+};
 
     if (
         !evenement.titre ||
