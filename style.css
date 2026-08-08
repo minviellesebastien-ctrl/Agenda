@@ -212,7 +212,7 @@ body{
     user-select:none;
     -webkit-user-drag:none;
     transition:transform .15s;
-    border-radius:34px;
+    border-radius:18px;
     overflow:hidden;
     display:block;
 }
