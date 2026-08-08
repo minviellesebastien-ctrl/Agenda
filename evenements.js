@@ -99,6 +99,8 @@ document
     .getElementById("btnAnnuler")
     .addEventListener("click", () => {
 
-        alert("Annuler fonctionne");
+        document
+            .getElementById("overlay")
+            .classList.add("cache");
 
     });
