@@ -45,3 +45,11 @@ document.getElementById("app").innerHTML = `
 
 </div>
 `;
+
+document.getElementById("btnAjouter").onclick = () => {
+    window.location.href = "ajout.html";
+};
+
+document.getElementById("btnEvenements").onclick = () => {
+    window.location.href = "evenements.html";
+};
