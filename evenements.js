@@ -114,23 +114,12 @@ document
     .addEventListener("click", () => {
 
         document
-    .getElementById("overlay")
-    .classList.add("cache");
+            .getElementById("overlay")
+            .classList.add("cache");
 
-document
-    .getElementById("overlaySuppr")
-    .classList.remove("cache");
-
-        const nouveauxEvents = events.filter(
-            event => event.id !== evenementSelectionne
-        );
-
-        localStorage.setItem(
-            "agenda-events",
-            JSON.stringify(nouveauxEvents)
-        );
-
-        location.reload();
+        document
+            .getElementById("overlaySuppr")
+            .classList.remove("cache");
 
     });
 
@@ -152,15 +141,6 @@ document
     .getElementById("btnConfirmerSuppr")
     .addEventListener("click", () => {
 
-        const nouveauxEvents = events.filter(
-            event => event.id !== evenementSelectionne
-        );
-
-        localStorage.setItem(
-            "agenda-events",
-            JSON.stringify(nouveauxEvents)
-        );
-
-        location.reload();
+    
 
     });
