@@ -61,7 +61,6 @@ if(events.length===0){
     <span>${event.heure}</span>
 </div>
 
-            <div class="ville">${event.ville}</div>
 
         </div>
 
