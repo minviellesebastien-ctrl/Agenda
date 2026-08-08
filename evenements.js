@@ -92,14 +92,8 @@ document.querySelectorAll(".carte").forEach(carte => {
     alert("clic détecté");
 
 });
-
-        document
-            alert("clic détecté");
-
-    });
-
 });
-
+        
 document
     .getElementById("btnAnnuler")
     .addEventListener("click", () => {
