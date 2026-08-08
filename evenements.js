@@ -85,21 +85,25 @@ if(events.length===0){
 
 let dernierTap = 0;
 let derniereCarte = null;
+
 document.querySelectorAll(".carte").forEach(carte => {
 
     carte.addEventListener("pointerup", () => {
         const maintenant = Date.now();
 
-        if (maintenant - dernierTap < 350) {
+        if (
+    derniereCarte === carte &&
+    maintenant - dernierTap < 350
+) {
 
-            document
-                .getElementById("overlay")
-                .classList.remove("hidden");
+    document
+        .getElementById("overlay")
+        .classList.remove("hidden");
 
-        }
+}
 
-        dernierTap = maintenant;
-
+dernierTap = maintenant;
+derniereCarte = carte;
     });
 
 });
