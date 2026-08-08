@@ -18,9 +18,7 @@ const imageCarte = event
     divers: "divers.png"
 }[event.categorie]
 : "concert.png";
-document.getElementById("app").innerHTML = `
 
-let countdown = "Aucun événement";
 
 if(event){
 
@@ -50,6 +48,11 @@ if(event){
     }
 
 }
+
+document.getElementById("app").innerHTML = `
+
+let countdown = "Aucun événement";
+
 
 <div class="event-card"
      style="background-image:url('${imageCarte}')">
