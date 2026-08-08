@@ -91,15 +91,18 @@ document.querySelectorAll(".carte").forEach(carte => {
 
         timerAppui = setTimeout(() => {
 
-            alert(
-`📋 Détails
+            document
+    .getElementById("overlay")
+    .classList.remove("cache");
+            document
+    .getElementById("btnAnnuler")
+    .onclick = () => {
 
-✏️ Modifier
+    document
+        .getElementById("overlay")
+        .classList.add("cache");
 
-🗑️ Supprimer
-
-✖ Annuler`
-            );
+};
 
         }, 2000);
 
