@@ -242,3 +242,62 @@ body{
 
     100%{transform:scale(1);}
 }
+
+#compteurBox{
+
+    position:absolute;
+
+    top:450px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:90%;
+}
+
+#compteur{
+
+    width:100%;
+
+    display:block;
+}
+
+#compteurTexte{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+}
+
+#nbEvents{
+
+    font-size:46px;
+
+    font-weight:700;
+
+    line-height:1;
+}
+
+#labelEvents{
+
+    margin-top:8px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    white-space:nowrap;
+}
