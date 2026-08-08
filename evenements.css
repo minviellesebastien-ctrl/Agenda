@@ -29,9 +29,9 @@ body{
 
 .back{
     position:absolute;
-    left:20px;
-    top:50%;
-    transform:translateY(-50%);
+    left:24px;
+    top:47%;
+    transform:translateY(-47%);
     color:#fff;
     text-decoration:none;
     font-size:34px;
@@ -90,7 +90,7 @@ body{
 
 .titre{
     position:absolute;
-    left:18px;
+    left:28px;
     top:26px;
 
     color:#fff;
@@ -100,7 +100,7 @@ body{
 
 .date{
     position:absolute;
-    left:18px;
+    left:28px;
     top:64px;
 
     color:#fff;
@@ -109,7 +109,7 @@ body{
 
 .lieu{
     position:absolute;
-    left:18px;
+    left:28px;
     top:84px;
 
     color:#fff;
@@ -118,7 +118,7 @@ body{
 
 .heure{
     position:absolute;
-    left:18px;
+    left:28px;
     top:120px;
 
     color:#fff;
