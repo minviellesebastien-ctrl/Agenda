@@ -27,11 +27,6 @@ document.getElementById("app").innerHTML = `
 
 </div>
 
-<div class="event-counter">
-    <span>27</span>
-    <p>ÉVÉNEMENTS</p>
-</div>
-
 <div class="buttons">
 
     <img src="btn-evenements.png"
