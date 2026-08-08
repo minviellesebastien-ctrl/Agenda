@@ -10,31 +10,72 @@ events.sort((a, b) => {
 });
 
 const event = events[0];
+const imageCarte = event
+? {
+    concert: "concert.png",
+    sport: "sport.png",
+    spectacle: "spectacle.png",
+    divers: "divers.png"
+}[event.categorie]
+: "concert.png";
 document.getElementById("app").innerHTML = `
-<div class="event-card">
+
+let countdown = "Aucun événement";
+
+if(event){
+
+    const [j,m,a] = event.date.split("/");
+
+    const aujourdhui = new Date();
+    aujourdhui.setHours(0,0,0,0);
+
+    const evenement = new Date(a, m-1, j);
+
+    const diff = Math.ceil(
+        (evenement-aujourdhui)/(1000*60*60*24)
+    );
+
+    if(diff===0){
+
+        countdown="AUJOURD'HUI";
+
+    }else if(diff===1){
+
+        countdown="DEMAIN";
+
+    }else{
+
+        countdown=`DANS ${diff} JOURS`;
+
+    }
+
+}
+
+<div class="event-card"
+     style="background-image:url('${imageCarte}')">
 
     <div class="countdown">
     <img src="hourglass.svg" class="icon-hourglass" alt="">
-    <span>DANS 21 JOURS</span>
+    <span>${countdown}</span>
 </div>
 
-    <div class="event-title">INDOCHINE</div>
+    <div class="event-title">${event ? event.titre : "Aucun événement"}</div>
 
     <div class="event-date">
     <img src="calendar.svg" class="icon">
-    <span>28 août 2026</span>
+    <span>${event ? event.date : "--/--/----"}</span>
 </div>
 
 <div class="event-place">
     <img src="location.svg" class="icon">
-    <span>Stade de France</span>
+    <span>${event ? event.lieu : "-"}</span>
 </div>
 
 <div class="separator"></div>
 
 <div class="event-time">
     <img src="clock.svg" class="icon">
-    <span>20:00</span>
+    <span>${event ? event.heure : "--:--"}</span>
 </div>
 
 </div>
