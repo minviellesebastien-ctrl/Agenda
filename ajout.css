@@ -40,7 +40,7 @@ h1{
 }
 
 .categories{
-    margin-top:35px;
+    margin-top:20px;
 
     display:flex;
 
@@ -61,18 +61,18 @@ h1{
 }
 
 .formulaire{
-    margin:35px 20px;
+    margin:20px 20px;
 
     display:flex;
 
     flex-direction:column;
 
-    gap:18px;
+    gap:10px;
 }
 
 .formulaire input{
 
-    height:56px;
+    height:50px;
 
     border:none;
 
@@ -121,7 +121,7 @@ h1{
 
     display:block;
 
-    margin:18px 0 8px;
+    margin:8px 0 5px;
 
     color:#9da7b8;
 
