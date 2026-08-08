@@ -55,30 +55,14 @@ body{
 
 .carte{
 
-    background:#232b3d;
+    position:relative;
 
-    border-radius:20px;
+    width:90%;
 
-    padding:18px;
-
-    margin-bottom:18px;
-
-    color:white;
+    margin:0 auto 20px;
 }
 
-.carte h2{
 
-    font-size:22px;
-
-    margin-bottom:10px;
-}
-
-.carte p{
-
-    margin-top:4px;
-
-    color:#cdd4df;
-}
 
 .vide{
 
