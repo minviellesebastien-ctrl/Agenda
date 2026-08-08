@@ -88,7 +88,7 @@ let derniereCarte = null;
 
 document.querySelectorAll(".carte").forEach(carte => {
 
-    carte.addEventListener("pointerup", () => {
+    carte.addEventListener("click", () => {
         const maintenant = Date.now();
 
         if (
