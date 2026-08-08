@@ -1,3 +1,15 @@
+const events = JSON.parse(localStorage.getItem("agenda-events")) || [];
+
+events.sort((a, b) => {
+
+    const [ja, ma, aa] = a.date.split("/");
+    const [jb, mb, ab] = b.date.split("/");
+
+    return new Date(aa, ma - 1, ja) - new Date(ab, mb - 1, jb);
+
+});
+
+const event = events[0];
 document.getElementById("app").innerHTML = `
 <div class="event-card">
 
