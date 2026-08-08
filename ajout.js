@@ -87,3 +87,57 @@ heureInput.addEventListener("input", () => {
     heureInput.value = v.slice(0,5);
 
 });
+
+let categorieSelectionnee = "";
+
+document.querySelectorAll(".categorie").forEach(cat => {
+
+    cat.addEventListener("click", () => {
+
+        document.querySelectorAll(".categorie")
+            .forEach(c => c.classList.remove("active"));
+
+        cat.classList.add("active");
+
+        categorieSelectionnee = cat.id;
+
+    });
+
+});
+
+document.getElementById("btnEnregistrer").addEventListener("click", () => {
+
+    if (!categorieSelectionnee) {
+        alert("Choisissez une catégorie.");
+        return;
+    }
+
+    const evenement = {
+        categorie: categorieSelectionnee,
+        titre: document.getElementById("titre").value.trim(),
+        date: document.getElementById("date").value.trim(),
+        heure: document.getElementById("heure").value.trim(),
+        ville: document.getElementById("ville").value.trim(),
+        lieu: document.getElementById("lieu").value.trim()
+    };
+
+    if (
+        !evenement.titre ||
+        !evenement.date ||
+        !evenement.heure ||
+        !evenement.ville ||
+        !evenement.lieu
+    ) {
+        alert("Complète tous les champs.");
+        return;
+    }
+
+    let events = JSON.parse(localStorage.getItem("agenda-events")) || [];
+
+    events.push(evenement);
+
+    localStorage.setItem("agenda-events", JSON.stringify(events));
+
+    window.location.href = "evenements.html";
+
+});
