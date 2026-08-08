@@ -96,8 +96,6 @@ document.getElementById("app").innerHTML = `
 
     <div id="compteurTexte">
 
-        <div id="nbEvents">${nbEvents}</div>
-
         <div id="labelEvents">${texteCompteur}</div>
 
     </div>
