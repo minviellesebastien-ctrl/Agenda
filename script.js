@@ -37,13 +37,14 @@ document.getElementById("app").innerHTML = `
 
 <div class="buttons">
 
-    <button class="btn blue">
-        Mes<br>événements
-    </button>
+    <img src="btn-evenements.png"
+         id="btnEvenements"
+         class="btn-img"
+         alt="Mes événements">
 
-    <button class="btn orange">
-        Ajouter un<br>événement
-    </button>
+    <img src="btn-ajouter.png"
+         id="btnAjouter"
+         class="btn-img"
+         alt="Ajouter un événement">
 
 </div>
-`;
