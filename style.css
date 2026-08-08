@@ -187,3 +187,15 @@ body{
     font-size:16px;
     font-weight:600;
 }
+
+.countdown{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+}
+
+.icon-hourglass{
+    width:18px;
+    height:18px;
+}
