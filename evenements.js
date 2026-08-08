@@ -89,7 +89,7 @@ document.querySelectorAll(".carte").forEach(carte => {
 
     carte.addEventListener("click", () => {
         
-        evenementSelectionne = carte.dataset.id;
+        evenementSelectionne = Number(carte.dataset.id);
 
         document
             .getElementById("overlay")
