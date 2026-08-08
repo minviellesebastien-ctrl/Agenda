@@ -223,11 +223,11 @@ body{
 
 #compteur{
     position:absolute;
-
-    top:450px;
-
+    top:350px;
     left:50%;
     transform:translateX(-50%);
-
     width:90%;
+    display:block;
+
+    z-index:2;
 }
