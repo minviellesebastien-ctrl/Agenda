@@ -17,6 +17,24 @@ const liste = document.getElementById("liste");
 const events =
     JSON.parse(localStorage.getItem("agenda-events")) || [];
 
+let modifie = false;
+
+events.forEach(event => {
+
+    if (!event.id) {
+        event.id = Date.now() + Math.random();
+        modifie = true;
+    }
+
+});
+
+if (modifie) {
+    localStorage.setItem(
+        "agenda-events",
+        JSON.stringify(events)
+    );
+}
+
 events.sort((a, b) => {
 
     const [ja, ma, aa] = a.date.split("/");
@@ -140,8 +158,6 @@ document
 document
     .getElementById("btnConfirmerSuppr")
     .addEventListener("click", () => {
-
-alert(evenementSelectionne);
         
         const nouveauxEvents = events.filter(
             event => event.id !== evenementSelectionne
