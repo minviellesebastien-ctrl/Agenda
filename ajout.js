@@ -25,7 +25,7 @@ document.getElementById("app").innerHTML = `
 <label class="label">TITRE</label>
 <input
     type="text"
-    id="titre"
+    id="titre">
 
 <label class="label">DATE</label>
 <input
@@ -44,12 +44,12 @@ document.getElementById("app").innerHTML = `
 <label class="label">VILLE</label>
 <input
     type="text"
-    id="ville"
+    id="ville">
 
 <label class="label">LIEU</label>
 <input
     type="text"
-    id="lieu"
+    id="lieu">
 
 </div>
 
