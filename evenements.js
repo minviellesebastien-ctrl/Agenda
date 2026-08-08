@@ -84,11 +84,10 @@ if(events.length===0){
 }
 
 let dernierTap = 0;
-
+let derniereCarte = null;
 document.querySelectorAll(".carte").forEach(carte => {
 
-    carte.addEventListener("click", () => {
-
+    carte.addEventListener("pointerup", () => {
         const maintenant = Date.now();
 
         if (maintenant - dernierTap < 350) {
