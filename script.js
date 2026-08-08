@@ -10,14 +10,22 @@ document.getElementById("app").innerHTML = `
 
     <div class="event-title">INDOCHINE</div>
 
-    <div class="event-date">28 août 2026</div>
+    <div class="event-date">
+    <img src="main/calendar.svg" class="icon">
+    <span>28 août 2026</span>
+</div>
 
-    <div class="event-place">Stade de France</div>
+<div class="event-place">
+    <img src="main/location.svg" class="icon">
+    <span>Stade de France</span>
+</div>
 
-    <div class="separator"></div>
+<div class="separator"></div>
 
-    <div class="event-time">20:00</div>
-
+<div class="event-time">
+    <img src="main/clock.svg" class="icon">
+    <span>20:00</span>
+</div>
 </div>
 
 </div>
