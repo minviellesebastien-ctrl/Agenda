@@ -89,12 +89,17 @@ body{
 }
 
 .titre{
+
     position:absolute;
-    left:28px;
-    top:26px;
+
+    left:18px;
+
+    top:14px;
 
     color:#fff;
+
     font-size:18px;
+
     font-weight:700;
 }
 
