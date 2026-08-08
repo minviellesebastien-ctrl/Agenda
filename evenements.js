@@ -88,8 +88,7 @@ document.querySelectorAll(".carte").forEach(carte => {
     carte.addEventListener("click", () => {
 
         document
-            .getElementById("overlay")
-            .classList.remove("hidden");
+            alert("clic détecté");
 
     });
 
