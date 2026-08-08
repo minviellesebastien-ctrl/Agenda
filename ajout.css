@@ -80,7 +80,8 @@ h1{
 
     padding:0 18px;
 
-    background:#1a2130;
+    background:#232b3d;
+    border:1px solid rgba(255,255,255,.08);
 
     color:white;
 
