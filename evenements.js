@@ -89,7 +89,7 @@ document.querySelectorAll(".carte").forEach(carte => {
 
         document
             .getElementById("overlay")
-            .classList.remove("hidden");
+            .classList.remove("cache");
 
     });
 
@@ -101,6 +101,6 @@ document
 
         document
             .getElementById("overlay")
-            .classList.add("hidden");
+            .classList.add("cache");
 
     });
