@@ -12,12 +12,20 @@ document.getElementById("app").innerHTML = `
 
     <div class="titre" id="titre"></div>
 
-    <div class="ligne" id="date"></div>
+    <div class="ligne">
+    <img src="calendar.svg" class="icon">
+    <span id="date"></span>
+</div>
 
-    <div class="ligne" id="heure"></div>
+<div class="ligne">
+    <img src="clock.svg" class="icon">
+    <span id="heure"></span>
+</div>
 
-    <div class="ligne" id="lieu"></div>
-
+<div class="ligne">
+    <img src="location.svg" class="icon">
+    <span id="lieu"></span>
+</div>
     <div class="adresseTitre">
         Adresse
     </div>
@@ -44,13 +52,13 @@ if (evenement) {
     document.getElementById("titre").textContent = evenement.titre;
 
     document.getElementById("date").textContent =
-        "📅 " + evenement.date;
+    evenement.date;
 
-    document.getElementById("heure").textContent =
-        "🕒 " + evenement.heure;
+document.getElementById("heure").textContent =
+    evenement.heure;
 
-    document.getElementById("lieu").textContent =
-        "📍 " + evenement.lieu;
+document.getElementById("lieu").textContent =
+    evenement.lieu;
 
     document.getElementById("adresse").textContent =
         evenement.adresse || "Adresse non renseignée";
