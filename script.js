@@ -200,3 +200,39 @@ document.getElementById("btnExporter").onclick = () => {
     location.reload();
 
 };
+
+const toastMsg = sessionStorage.getItem("toastMessage");
+
+if (toastMsg) {
+
+    sessionStorage.removeItem("toastMessage");
+
+    const toast = document.createElement("div");
+    toast.className = "toast";
+
+    if (toastMsg.startsWith("✓")) {
+        toast.innerHTML =
+            "<span style='color:#32d74b;font-weight:bold'>✓</span>" +
+            toastMsg.substring(1);
+    } else {
+        toast.textContent = toastMsg;
+    }
+
+    document.body.appendChild(toast);
+
+    requestAnimationFrame(() => toast.classList.add("show"));
+
+    if (navigator.vibrate)
+        navigator.vibrate(
+            toastMsg.startsWith("✓") ? 20 : [40,40,40]
+        );
+
+    setTimeout(() => {
+
+        toast.classList.remove("show");
+
+        setTimeout(() => toast.remove(), 300);
+
+    }, 2200);
+
+}
