@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <link rel="manifest" href="manifest.json">
+
+<meta name="theme-color" content="#050914">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Agenda Culturel</title>
@@ -18,5 +21,15 @@
 
 <script src="script.js"></script>
 
+<script>
+
+if ("serviceWorker" in navigator) {
+
+    navigator.serviceWorker.register("sw.js");
+
+}
+
+</script>
+    
 </body>
 </html>
