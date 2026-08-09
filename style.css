@@ -313,20 +313,17 @@ body{
     left:50%;
     bottom:40px;
     transform:translateX(-50%) translateY(20px);
-
     background:#232b3d;
     color:#fff;
-
     padding:14px 22px;
     border-radius:16px;
-
     font-family:"Poppins",sans-serif;
     font-size:13px;
     font-weight:600;
-
     opacity:0;
     transition:.3s;
     z-index:9999;
+    white-space: nowrap;
 
     box-shadow:0 8px 25px rgba(0,0,0,.35);
 }
