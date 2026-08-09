@@ -236,3 +236,55 @@ if (toastMsg) {
     }, 2200);
 
 }
+
+document.getElementById("btnImporter").onclick = () => {
+
+    document.getElementById("importFile").click();
+
+};
+
+document
+    .getElementById("importFile")
+    .addEventListener("change", (e) => {
+
+        const fichier = e.target.files[0];
+
+        if (!fichier) return;
+
+        const lecteur = new FileReader();
+
+        lecteur.onload = () => {
+
+            try {
+
+                const eventsImportes =
+                    JSON.parse(lecteur.result);
+
+                localStorage.setItem(
+                    "agenda-events",
+                    JSON.stringify(eventsImportes)
+                );
+
+                sessionStorage.setItem(
+                    "toastMessage",
+                    "✓ Événements importés"
+                );
+
+                location.reload();
+
+            } catch {
+
+                sessionStorage.setItem(
+                    "toastMessage",
+                    "⚠️ Import impossible"
+                );
+
+                location.reload();
+
+            }
+
+        };
+
+        lecteur.readAsText(fichier);
+
+    });
