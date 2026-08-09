@@ -1,6 +1,6 @@
 {
   "name": "Agenda Culturel",
-  "short_name": "Agenda",
+  "short_name": "Événements",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#050914",
