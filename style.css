@@ -122,7 +122,7 @@ body{
 .buttons{
 
     position:absolute;
-    bottom:127px;
+    bottom:130px;
     left:20px;
     right:20px;
     display:flex;
@@ -273,19 +273,12 @@ body{
 #labelEvents{
 
     position:absolute;
-
     bottom:24px;
-
     left:56%;
-
     transform:translateX(-50%);
-
     color:#fff;
-
     font-size:15px;
-
     font-weight:600;
-
     white-space:nowrap;
 }
 
@@ -293,7 +286,7 @@ body{
     position:absolute;
     left:20px;
     right:20px;
-    bottom:50px;
+    bottom:80px;
     display:flex;
     justify-content:center;
     gap:14px;
