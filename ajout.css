@@ -86,7 +86,7 @@ body{
 }
 
 .formulaire{
-    margin:14px 20px;
+    margin:30px 20px;
 
     display:flex;
 
@@ -118,7 +118,7 @@ body{
 #btnEnregistrer{
     display:block;
     width:calc(100% - 40px);
-    margin:18px auto 25px;
+    margin:50px auto 25px;
 }
 
 .formulaire input::placeholder{
