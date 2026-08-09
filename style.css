@@ -17,11 +17,15 @@ body{
 }
 
 #app{
-    position:relative;
     width:100%;
     max-width:480px;
-    min-height:100dvh;
-    margin:auto;
+    margin:0 auto;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    min-height:100vh;
 }
 
 /* ===== CARTE ===== */
