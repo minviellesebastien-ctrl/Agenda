@@ -140,6 +140,24 @@ document.getElementById("app").innerHTML = `
 
 </div>
 
+<div class="backupBtns">
+
+    <button id="btnExporter" class="backupBtn">
+        Exporter
+    </button>
+
+    <button id="btnImporter" class="backupBtn">
+        Importer
+    </button>
+
+</div>
+
+<input
+    type="file"
+    id="importFile"
+    accept=".json"
+    hidden>
+
 `;
 
 document.getElementById("btnAjouter").onclick = () => {
