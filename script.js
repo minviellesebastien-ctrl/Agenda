@@ -178,8 +178,8 @@ document.getElementById("btnExporter").onclick = () => {
         `agenda-${maintenant.getFullYear()}-` +
         `${String(maintenant.getMonth()+1).padStart(2,"0")}-` +
         `${String(maintenant.getDate()).padStart(2,"0")}_` +
-        `${String(maintenant.getHours()).padStart(2,"0")}-` +
-        `${String(maintenant.getMinutes()).padStart(2,"0")}.json`;
+        `${String(maintenant.getHours()).padStart(2,"0")}h` +
+`${String(maintenant.getMinutes()).padStart(2,"0")}.json`;
 
     const blob = new Blob([data], {
         type: "application/json"
