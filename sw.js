@@ -1,4 +1,4 @@
-const CACHE = "agenda-v15";
+const CACHE = "agenda-v16";
 
 const FILES = [
 
