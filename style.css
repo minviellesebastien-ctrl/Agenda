@@ -31,6 +31,7 @@ body{
 /* ===== CARTE ===== */
 
 .event-card{
+    position: relative;
     width:90%;
     aspect-ratio:1.5;
 
