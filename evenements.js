@@ -171,3 +171,16 @@ document
         location.reload();
 
     });
+
+document
+    .getElementById("btnDetails")
+    .addEventListener("click", () => {
+
+        sessionStorage.setItem(
+            "eventSelectionne",
+            evenementSelectionne
+        );
+
+        window.location.href = "details.html";
+
+    });
