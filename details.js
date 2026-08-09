@@ -30,7 +30,11 @@ document.getElementById("app").innerHTML = `
         Adresse
     </div>
 
-    <div class="adresse" id="adresse"></div>
+    <textarea
+    class="adresse"
+    id="adresse"
+    placeholder="Adresse non renseignée">
+</textarea>
 
     <div class="bouton" id="btnAdresse">
         Modifier l'adresse
@@ -54,13 +58,29 @@ if (evenement) {
     document.getElementById("date").textContent =
     evenement.date;
 
-document.getElementById("heure").textContent =
+    document.getElementById("heure").textContent =
     evenement.heure;
 
-document.getElementById("lieu").textContent =
+    document.getElementById("lieu").textContent =
     evenement.lieu;
 
-    document.getElementById("adresse").textContent =
-        evenement.adresse || "Adresse non renseignée";
+    document.getElementById("adresse").value =
+    evenement.adresse || "";
 
 }
+
+document
+    .getElementById("btnAdresse")
+    .addEventListener("click", () => {
+
+        evenement.adresse =
+            document.getElementById("adresse").value.trim();
+
+        localStorage.setItem(
+            "agenda-events",
+            JSON.stringify(events)
+        );
+
+        window.location.href = "evenements.html";
+
+    });
