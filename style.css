@@ -122,7 +122,7 @@ body{
 .buttons{
 
     position:absolute;
-    bottom:130px;
+    bottom:127px;
     left:20px;
     right:20px;
     display:flex;
@@ -293,7 +293,7 @@ body{
     position:absolute;
     left:20px;
     right:20px;
-    bottom:30px;
+    bottom:50px;
     display:flex;
     justify-content:center;
     gap:14px;
