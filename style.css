@@ -20,7 +20,7 @@ body{
     position:relative;
     width:100%;
     max-width:480px;
-    height:100vh;
+    min-height:100dvh;
     margin:auto;
 }
 
