@@ -27,8 +27,8 @@ document.getElementById("app").innerHTML = `
     <span id="lieu"></span>
 </div>
     <div class="adresseTitre">
-        Adresse
-    </div>
+    Adresse / Notes
+</div>
 
     <textarea
     class="adresse"
