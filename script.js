@@ -167,3 +167,36 @@ document.getElementById("btnAjouter").onclick = () => {
 document.getElementById("btnEvenements").onclick = () => {
     window.location.href = "evenements.html";
 };
+
+document.getElementById("btnExporter").onclick = () => {
+
+    const data = localStorage.getItem("agenda-events") || "[]";
+
+    const maintenant = new Date();
+
+    const nomFichier =
+        `agenda-${maintenant.getFullYear()}-` +
+        `${String(maintenant.getMonth()+1).padStart(2,"0")}-` +
+        `${String(maintenant.getDate()).padStart(2,"0")}_` +
+        `${String(maintenant.getHours()).padStart(2,"0")}-` +
+        `${String(maintenant.getMinutes()).padStart(2,"0")}.json`;
+
+    const blob = new Blob([data], {
+        type: "application/json"
+    });
+
+    const lien = document.createElement("a");
+    lien.href = URL.createObjectURL(blob);
+    lien.download = nomFichier;
+    lien.click();
+
+    URL.revokeObjectURL(lien.href);
+
+    sessionStorage.setItem(
+        "toastMessage",
+        "✓ Événements exportés"
+    );
+
+    location.reload();
+
+};
