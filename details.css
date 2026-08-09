@@ -71,11 +71,27 @@ body{
 }
 
 .adresse{
+    width:100%;
+    min-height:120px;
     background:#232b3d;
+    border:none;
     border-radius:14px;
     padding:16px;
-    min-height:90px;
-    white-space:pre-wrap;
+    color:#fff;
+    font-size:17px;
+    font-family:"Poppins",sans-serif;
+    resize:none;
+    outline:none;
+}
+
+.adresse::placeholder{
+    color:#8b94a8;
+}
+
+.adresse:focus{
+    outline:none;
+    border:none;
+    box-shadow:none;
 }
 
 .bouton{
