@@ -69,7 +69,7 @@ if (event) {
 
     } else {
 
-        countdown = `DANS ${diff} JOURS`;
+        countdown = `${diff} JOURS`;
 
     }
 
