@@ -10,34 +10,55 @@ document.getElementById("app").innerHTML = `
 
 <div class="carte">
 
-    <div class="titre" id="titre"></div>
+    <input
+        class="titre champ"
+        id="titre"
+        type="text"
+        placeholder="Titre de l'événement"
+    >
 
     <div class="ligne">
-    <img src="calendar.svg" class="icon">
-    <span id="date"></span>
-</div>
+        <img src="calendar.svg" class="icon">
+        <input
+            class="champ"
+            id="date"
+            type="text"
+            placeholder="Date"
+        >
+    </div>
 
-<div class="ligne">
-    <img src="clock.svg" class="icon">
-    <span id="heure"></span>
-</div>
+    <div class="ligne">
+        <img src="clock.svg" class="icon">
+        <input
+            class="champ"
+            id="heure"
+            type="text"
+            placeholder="Heure"
+        >
+    </div>
 
-<div class="ligne">
-    <img src="location.svg" class="icon">
-    <span id="lieu"></span>
-</div>
+    <div class="ligne">
+        <img src="location.svg" class="icon">
+        <input
+            class="champ"
+            id="lieu"
+            type="text"
+            placeholder="Lieu"
+        >
+    </div>
+
     <div class="adresseTitre">
-    Adresse / Notes
-</div>
+        Adresse / Notes
+    </div>
 
     <textarea
-    class="adresse"
-    id="adresse"
-    placeholder="Adresse non renseignée">
-</textarea>
+        class="adresse"
+        id="adresse"
+        placeholder="Adresse non renseignée">
+    </textarea>
 
     <div class="bouton" id="btnAdresse">
-        Modifier l'adresse
+        Modifier
     </div>
 
 </div>
@@ -53,25 +74,40 @@ const evenement = events.find(e => e.id === id);
 
 if (evenement) {
 
-    document.getElementById("titre").textContent = evenement.titre;
+    document.getElementById("titre").value =
+        evenement.titre || "";
 
-    document.getElementById("date").textContent =
-    evenement.date;
+    document.getElementById("date").value =
+        evenement.date || "";
 
-    document.getElementById("heure").textContent =
-    evenement.heure;
+    document.getElementById("heure").value =
+        evenement.heure || "";
 
-    document.getElementById("lieu").textContent =
-    evenement.lieu;
+    document.getElementById("lieu").value =
+        evenement.lieu || "";
 
     document.getElementById("adresse").value =
-    evenement.adresse || "";
-
+        evenement.adresse || "";
 }
+
 
 document
     .getElementById("btnAdresse")
     .addEventListener("click", () => {
+
+        if (!evenement) return;
+
+        evenement.titre =
+            document.getElementById("titre").value.trim();
+
+        evenement.date =
+            document.getElementById("date").value.trim();
+
+        evenement.heure =
+            document.getElementById("heure").value.trim();
+
+        evenement.lieu =
+            document.getElementById("lieu").value.trim();
 
         evenement.adresse =
             document.getElementById("adresse").value.trim();
@@ -82,5 +118,4 @@ document
         );
 
         window.location.href = "evenements.html";
-
     });
