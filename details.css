@@ -119,3 +119,28 @@ body{
     height:20px;
     flex-shrink:0;
 }
+
+.champ{
+    width:100%;
+    background:transparent;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-family:"Poppins",sans-serif;
+    font-size:17px;
+    padding:0;
+}
+
+.champ::placeholder{
+    color:#8b94a8;
+}
+
+.titre.champ{
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.ligne .champ{
+    flex:1;
+}
