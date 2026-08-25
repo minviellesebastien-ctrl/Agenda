@@ -1,8 +1,9 @@
 {
   "name": "Agenda Culturel",
   "short_name": "Sorties",
-  "start_url": "./",
+  "start_url": "https://minviellesebastien-ctrl.github.io/Agenda/",
   "id": "/Agenda/",
+  "scope": "https://minviellesebastien-ctrl.github.io/Agenda/"
   "display": "standalone",
   "background_color": "#050914",
   "theme_color": "#050914",
