@@ -2,6 +2,7 @@
   "name": "Agenda Culturel",
   "short_name": "Sorties",
   "start_url": "./",
+  "id": "/Agenda/",
   "display": "standalone",
   "background_color": "#050914",
   "theme_color": "#050914",
